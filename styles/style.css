@@ -4,6 +4,13 @@
   --white-color: #fff;
   --hero--background: rgba(0, 0, 0, 0.5);
 }
+/* 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ */
 
 body {
   font-family: var(--primary-font);
@@ -68,11 +75,15 @@ a {
 
 .hero {
   background-color: var(--hero--background);
+  background-image: url('../img/img-hero.jpg');
+  background-repeat: no-repeat;
   color: var(--white-color);
   text-align: center;
-
   padding-top: 120px;
   padding-bottom: 367px;
+  max-width: 1440px;
+  margin: 0 auto;
+
 }
 
 .main-title {
